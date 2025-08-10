@@ -1,0 +1,28 @@
+{
+  "name": "playwright-task-assessment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test headed on chromium": "npx playwright test --headed --project=chromium",
+    "test headed on firefox": "npx playwright test --headed --project=firefox",
+    "test headed on webkit": "npx playwright test --headed --project=webkit",
+    "test on all browsers": "npx playwright test",
+    "test on mobile chrome": "npx playwright test --project=mobile-chrome",
+    "test on mobile safari": "npx playwright test --project=mobile-safari",
+    "test on environment A": "cross-env ENV=A npx playwright test",
+    "test on environment B": "cross-env ENV=B npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "cross-env": "^7.0.3"
+  }
+}
